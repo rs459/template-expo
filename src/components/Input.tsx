@@ -28,6 +28,8 @@ export const Input = ({
           className
         )}
         placeholderTextColor="#9ca3af"
+        accessibilityLabel={label}
+        accessibilityHint={error ? `Erreur: ${error}` : undefined}
         {...props}
       />
       {error && (

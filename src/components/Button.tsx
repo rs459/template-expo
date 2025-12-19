@@ -38,6 +38,10 @@ export const Button = ({
     <TouchableOpacity
       onPress={onPress}
       disabled={disabled || isLoading}
+      activeOpacity={0.7}
+      accessibilityRole="button"
+      accessibilityLabel={title}
+      accessibilityState={{ disabled: disabled || isLoading, busy: isLoading }}
       className={twMerge(
         baseStyle,
         variants[variant],

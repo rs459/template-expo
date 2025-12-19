@@ -31,7 +31,7 @@ export const LoginScreen = () => {
   return (
     <SafeAreaView className="flex-1 bg-white justify-center px-6">
       <View className="mb-8">
-        <Text className="text-3xl font-bold text-gray-900">Bienvenue</Text>
+        <Text className="text-3xl font-bold text-gray-900" accessibilityRole="header">Bienvenue</Text>
         <Text className="text-gray-500 mt-2">Connectez-vous à votre compte</Text>
       </View>
 
@@ -78,7 +78,7 @@ export const LoginScreen = () => {
       <View className="flex-row justify-center mt-6">
         <Text className="text-gray-600">Pas de compte ? </Text>
         <Link href="/(auth)/register" asChild>
-          <Text className="text-blue-600 font-semibold">S'inscrire</Text>
+          <Text className="text-blue-600 font-semibold" accessibilityRole="link">S'inscrire</Text>
         </Link>
       </View>
     </SafeAreaView>
